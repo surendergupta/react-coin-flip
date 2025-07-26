@@ -4,7 +4,7 @@ Welcome to the **Coin Flip Game**, a simple and responsive React application tha
 
 ## 🚀 Live Demo
 
-🔗 [View Live](https://react-quiz-game-zeta.vercel.app/)
+🔗 [View Live](https://react-coin-flip.vercel.app/)
 
 ---
 
@@ -16,6 +16,11 @@ Welcome to the **Coin Flip Game**, a simple and responsive React application tha
 ![Tail](public/tail-coins.png)
 > Tail Coin
 
+![Homepage](public/screenshot1.png)
+> Home/Landing Page
+
+![result](public/screenshot2.png)
+> Result
 ---
 
 ## 🧠 Features
