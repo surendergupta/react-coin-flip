@@ -1,12 +1,120 @@
-# React + Vite
+# 🪙 Coin Flip Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Coin Flip Game**, a simple and responsive React application that simulates flipping a coin. The app visually displays results and tracks heads, tails, and total flips — all with smooth animations.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 [View Live](https://react-quiz-game-zeta.vercel.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Screenshots
+
+![Head](public/head-coins.png)
+> Head Coin
+
+![Tail](public/tail-coins.png)
+> Tail Coin
+
+---
+
+## 🧠 Features
+
+- 🎯 Flip a virtual coin with a single click
+- 🖼 Displays head or tail image with a smooth animation
+- 📊 Tracks:
+  - Number of heads
+  - Number of tails
+  - Total number of flips
+- 🕹 Prevents re-flipping while animation is in progress
+- 📱 Fully responsive across devices (mobile, tablet, desktop)
+
+---
+
+## 📁 Project Structure
+```bash
+CoinFlipGame/
+├── public/
+│ ├── head-coins.png
+│ └── tail-coins.png
+├── src/
+│ ├── Components/
+│ │ ├── Coin/
+│ │ │   ├── Coin.js
+│ │ │   └── Coin.css
+│ │ └── FlipCoin/
+│ │     ├── FlipCoin.js
+│ │     └── FlipCoin.css
+│ ├── App.js
+│ ├── App.css
+│ ├── index.css
+│ └── main.jsx
+├── package.json
+└── README.md
+```
+
+---
+
+## 🛠️ Tech Stack
+
+- **React** – Frontend library
+- **CSS** – Styling and animations
+- **Responsive Design** – Mobile-friendly layout
+
+---
+
+## 🔧 Getting Started
+
+```bash
+git clone https://github.com/your-username/coin-flip-game.git
+cd coin-flip-game
+npm install
+npm run dev
+```
+
+Open your browser and go to: http://localhost:5173
+
+---
+
+## 🧩 Component Overview
+`App.js`
+- Top-level wrapper that renders the game heading and FlipCoin component.
+
+`FlipCoin.js`
+- Contains state logic for:
+    - Current coin face
+    - Flip count
+    - Head count
+    - Animation status
+- Handles the coin flipping animation and state updates.
+
+`Coin.js`
+- Displays the current face (head or tail) image based on props.
+
+---
+
+## 🎨 Styling
+Each component has its own scoped CSS:
+- `App.css` – Global layout and typography
+- `FlipCoin.css` – Flip animation and layout
+- `Coin.css` – Image styling and effects
+
+> ✅ The layout is fully responsive across different screen sizes.
+
+---
+
+## 📈 Future Enhancements
+- 🔊 Add coin flip sound effects
+- 🧾 Flip history tracker
+- 📉 Win ratio or head/tail probability
+- 🎨 Theme customization (dark/light mode)
+
+---
+
+## 🧑‍💻 Author
+Made with ❤️ by Surender Gupta
+
+---
+
+## 📃 License
+This project is licensed under the MIT License.
