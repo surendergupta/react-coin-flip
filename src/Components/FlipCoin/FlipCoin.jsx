@@ -27,7 +27,7 @@ const FlipCoin = () => {
     }
 
   return (
-    <div>
+    <div className='flip-coin'>
       <h2>Let's flip a coin</h2>
       {currentFace && (
         <div key={totalFlips} className={`coin ${isFlipping ? 'flip-animation' : ''}`}>
@@ -35,7 +35,15 @@ const FlipCoin = () => {
         </div>
       )}      
       <button onClick={handleClick} disabled={isFlipping}>Flip Me!</button>
-      <p>Out of {totalFlips} flips, there have been {heads} heads and {totalFlips - heads} tails</p>
+      <p>
+        Heads : {heads}
+      </p>
+      <p>
+        Tails : {totalFlips - heads}
+      </p>
+      <p>
+        Total Flips : {totalFlips}
+      </p>
     </div>
   )
 }
